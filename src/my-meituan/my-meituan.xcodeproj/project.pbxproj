@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00FBF1701C8AF1C30067CC57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF16F1C8AF1C30067CC57 /* main.m */; };
+		00FBF1731C8AF1C30067CC57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF1721C8AF1C30067CC57 /* AppDelegate.m */; };
+		00FBF1761C8AF1C30067CC57 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF1751C8AF1C30067CC57 /* ViewController.m */; };
+		00FBF17B1C8AF1C30067CC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FBF17A1C8AF1C30067CC57 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00FBF16B1C8AF1C30067CC57 /* my-meituan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-meituan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00FBF16F1C8AF1C30067CC57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00FBF1711C8AF1C30067CC57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00FBF1721C8AF1C30067CC57 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00FBF1741C8AF1C30067CC57 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		00FBF1751C8AF1C30067CC57 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		00FBF17A1C8AF1C30067CC57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00FBF17F1C8AF1C30067CC57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00FBF1681C8AF1C30067CC57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00FBF1621C8AF1C30067CC57 = {
+			isa = PBXGroup;
+			children = (
+				00FBF16D1C8AF1C30067CC57 /* my-meituan */,
+				00FBF16C1C8AF1C30067CC57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00FBF16C1C8AF1C30067CC57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00FBF16B1C8AF1C30067CC57 /* my-meituan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00FBF16D1C8AF1C30067CC57 /* my-meituan */ = {
+			isa = PBXGroup;
+			children = (
+				00FBF1711C8AF1C30067CC57 /* AppDelegate.h */,
+				00FBF1721C8AF1C30067CC57 /* AppDelegate.m */,
+				00FBF1741C8AF1C30067CC57 /* ViewController.h */,
+				00FBF1751C8AF1C30067CC57 /* ViewController.m */,
+				00FBF17A1C8AF1C30067CC57 /* Assets.xcassets */,
+				00FBF17F1C8AF1C30067CC57 /* Info.plist */,
+				00FBF16E1C8AF1C30067CC57 /* Supporting Files */,
+			);
+			path = "my-meituan";
+			sourceTree = "<group>";
+		};
+		00FBF16E1C8AF1C30067CC57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00FBF16F1C8AF1C30067CC57 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00FBF16A1C8AF1C30067CC57 /* my-meituan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00FBF1821C8AF1C30067CC57 /* Build configuration list for PBXNativeTarget "my-meituan" */;
+			buildPhases = (
+				00FBF1671C8AF1C30067CC57 /* Sources */,
+				00FBF1681C8AF1C30067CC57 /* Frameworks */,
+				00FBF1691C8AF1C30067CC57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "my-meituan";
+			productName = "my-meituan";
+			productReference = 00FBF16B1C8AF1C30067CC57 /* my-meituan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00FBF1631C8AF1C30067CC57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "robin young";
+				TargetAttributes = {
+					00FBF16A1C8AF1C30067CC57 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 00FBF1661C8AF1C30067CC57 /* Build configuration list for PBXProject "my-meituan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00FBF1621C8AF1C30067CC57;
+			productRefGroup = 00FBF16C1C8AF1C30067CC57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00FBF16A1C8AF1C30067CC57 /* my-meituan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00FBF1691C8AF1C30067CC57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FBF17B1C8AF1C30067CC57 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00FBF1671C8AF1C30067CC57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FBF1761C8AF1C30067CC57 /* ViewController.m in Sources */,
+				00FBF1731C8AF1C30067CC57 /* AppDelegate.m in Sources */,
+				00FBF1701C8AF1C30067CC57 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		00FBF1801C8AF1C30067CC57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		00FBF1811C8AF1C30067CC57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00FBF1831C8AF1C30067CC57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = "my-meituan/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robin.my-meituan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		00FBF1841C8AF1C30067CC57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = "my-meituan/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robin.my-meituan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00FBF1661C8AF1C30067CC57 /* Build configuration list for PBXProject "my-meituan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FBF1801C8AF1C30067CC57 /* Debug */,
+				00FBF1811C8AF1C30067CC57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00FBF1821C8AF1C30067CC57 /* Build configuration list for PBXNativeTarget "my-meituan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FBF1831C8AF1C30067CC57 /* Debug */,
+				00FBF1841C8AF1C30067CC57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00FBF1631C8AF1C30067CC57 /* Project object */;
+}
