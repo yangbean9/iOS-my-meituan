@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MyNavController.h
 //  my-meituan
 //
 //  Created by robin young on 16/3/5.
@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface MyNavController : UINavigationController
 
 @end
-

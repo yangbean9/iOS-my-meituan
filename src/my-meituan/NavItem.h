@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NavItem.h
 //  my-meituan
 //
 //  Created by robin young on 16/3/5.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface NavItem : UIView
++ (instancetype)makeItem;
 @end
-

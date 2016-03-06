@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00D31C161C8BD4EF00B939B4 /* NavItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D31C151C8BD4EF00B939B4 /* NavItem.xib */; };
 		00FBF1701C8AF1C30067CC57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF16F1C8AF1C30067CC57 /* main.m */; };
 		00FBF1731C8AF1C30067CC57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF1721C8AF1C30067CC57 /* AppDelegate.m */; };
-		00FBF1761C8AF1C30067CC57 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF1751C8AF1C30067CC57 /* ViewController.m */; };
 		00FBF17B1C8AF1C30067CC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FBF17A1C8AF1C30067CC57 /* Assets.xcassets */; };
+		00FBF1871C8B14DF0067CC57 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF1861C8B14DF0067CC57 /* FirstViewController.m */; };
+		00FBF18A1C8B17B10067CC57 /* MyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF1891C8B17B10067CC57 /* MyNavController.m */; };
+		00FBF18D1C8B2E910067CC57 /* NavItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF18C1C8B2E910067CC57 /* NavItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00D31C151C8BD4EF00B939B4 /* NavItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavItem.xib; sourceTree = "<group>"; };
 		00FBF16B1C8AF1C30067CC57 /* my-meituan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-meituan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FBF16F1C8AF1C30067CC57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00FBF1711C8AF1C30067CC57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00FBF1721C8AF1C30067CC57 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		00FBF1741C8AF1C30067CC57 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		00FBF1751C8AF1C30067CC57 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		00FBF17A1C8AF1C30067CC57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00FBF17F1C8AF1C30067CC57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00FBF1851C8B14DF0067CC57 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		00FBF1861C8B14DF0067CC57 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		00FBF1881C8B17B10067CC57 /* MyNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavController.h; sourceTree = "<group>"; };
+		00FBF1891C8B17B10067CC57 /* MyNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavController.m; sourceTree = "<group>"; };
+		00FBF18B1C8B2E910067CC57 /* NavItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavItem.h; path = ../NavItem.h; sourceTree = "<group>"; };
+		00FBF18C1C8B2E910067CC57 /* NavItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavItem.m; path = ../NavItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +62,15 @@
 		00FBF16D1C8AF1C30067CC57 /* my-meituan */ = {
 			isa = PBXGroup;
 			children = (
+				00FBF18B1C8B2E910067CC57 /* NavItem.h */,
+				00FBF18C1C8B2E910067CC57 /* NavItem.m */,
 				00FBF1711C8AF1C30067CC57 /* AppDelegate.h */,
 				00FBF1721C8AF1C30067CC57 /* AppDelegate.m */,
-				00FBF1741C8AF1C30067CC57 /* ViewController.h */,
-				00FBF1751C8AF1C30067CC57 /* ViewController.m */,
+				00FBF1851C8B14DF0067CC57 /* FirstViewController.h */,
+				00FBF1861C8B14DF0067CC57 /* FirstViewController.m */,
+				00FBF1881C8B17B10067CC57 /* MyNavController.h */,
+				00FBF1891C8B17B10067CC57 /* MyNavController.m */,
+				00D31C151C8BD4EF00B939B4 /* NavItem.xib */,
 				00FBF17A1C8AF1C30067CC57 /* Assets.xcassets */,
 				00FBF17F1C8AF1C30067CC57 /* Info.plist */,
 				00FBF16E1C8AF1C30067CC57 /* Supporting Files */,
@@ -130,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D31C161C8BD4EF00B939B4 /* NavItem.xib in Resources */,
 				00FBF17B1C8AF1C30067CC57 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,9 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00FBF1761C8AF1C30067CC57 /* ViewController.m in Sources */,
 				00FBF1731C8AF1C30067CC57 /* AppDelegate.m in Sources */,
 				00FBF1701C8AF1C30067CC57 /* main.m in Sources */,
+				00FBF1871C8B14DF0067CC57 /* FirstViewController.m in Sources */,
+				00FBF18A1C8B17B10067CC57 /* MyNavController.m in Sources */,
+				00FBF18D1C8B2E910067CC57 /* NavItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
