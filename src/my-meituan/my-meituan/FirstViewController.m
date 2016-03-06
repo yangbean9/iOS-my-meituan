@@ -8,9 +8,13 @@
 
 #import "FirstViewController.h"
 #import "NavItem.h"
+#import "PopViewController.h"
 
-@interface FirstViewController ()
-
+@interface FirstViewController () {
+    UIBarButtonItem *item1;
+    UIBarButtonItem *item2;
+    UIBarButtonItem *item3;
+}
 @end
 
 @implementation FirstViewController
@@ -32,10 +36,43 @@
     UIBarButtonItem *logo = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_meituan_logo"] landscapeImagePhone:nil style:UIBarButtonItemStyleDone target:nil action:nil];
 //    self.navigationItem.leftBarButtonItem = logo;
     //3个UIBarButtonItem
-    UIBarButtonItem *item1 = [[UIBarButtonItem alloc]initWithCustomView:[NavItem makeItem]];
-    UIBarButtonItem *item2 = [[UIBarButtonItem alloc]initWithCustomView:[NavItem makeItem]];
-    UIBarButtonItem *item3 = [[UIBarButtonItem alloc]initWithCustomView:[NavItem makeItem]];
+    NavItem *nav1 = [NavItem makeItem];
+    NavItem *nav2 = [NavItem makeItem];
+    NavItem *nav3 = [NavItem makeItem];
+    [nav1 addtarget:self action:@selector(item1click)];
+    [nav2 addtarget:self action:@selector(item2click)];
+    [nav3 addtarget:self action:@selector(item3click)];
+    
+    item1 = [[UIBarButtonItem alloc]initWithCustomView:nav1];
+    item2 = [[UIBarButtonItem alloc]initWithCustomView:nav2];
+    item3 = [[UIBarButtonItem alloc]initWithCustomView:nav3];
     self.navigationItem.leftBarButtonItems = @[logo,item1,item2,item3];
     
 }
+
+#pragma mark -菜单栏点击事件
+
+
+- (void) item1click {
+    NSLog(@"item1");
+    [self createPopver];
+}
+
+- (void) item2click {
+    NSLog(@"item2");
+}
+
+- (void) item3click {
+    NSLog(@"item3");
+}
+
+#pragma mark -创建下拉菜单
+
+- (void) createPopver {
+    PopViewController *pvc = [[PopViewController alloc]init];
+    UIPopoverController *popc = [[UIPopoverController alloc]initWithContentViewController:pvc];
+    [popc presentPopoverFromBarButtonItem:item1 permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    
+}
+
 @end

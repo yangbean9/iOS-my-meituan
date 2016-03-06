@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00CF45261C8C811900637BC0 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CF45251C8C811900637BC0 /* PopViewController.m */; };
 		00D31C161C8BD4EF00B939B4 /* NavItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D31C151C8BD4EF00B939B4 /* NavItem.xib */; };
 		00D31C191C8BD7F800B939B4 /* NavItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D31C181C8BD7F800B939B4 /* NavItem.m */; };
 		00FBF1701C8AF1C30067CC57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF16F1C8AF1C30067CC57 /* main.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00CF45241C8C811900637BC0 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		00CF45251C8C811900637BC0 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
 		00D31C151C8BD4EF00B939B4 /* NavItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavItem.xib; sourceTree = "<group>"; };
 		00D31C171C8BD7F800B939B4 /* NavItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavItem.h; sourceTree = "<group>"; };
 		00D31C181C8BD7F800B939B4 /* NavItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavItem.m; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 				00FBF1861C8B14DF0067CC57 /* FirstViewController.m */,
 				00FBF1881C8B17B10067CC57 /* MyNavController.h */,
 				00FBF1891C8B17B10067CC57 /* MyNavController.m */,
+				00CF45241C8C811900637BC0 /* PopViewController.h */,
+				00CF45251C8C811900637BC0 /* PopViewController.m */,
 				00D31C151C8BD4EF00B939B4 /* NavItem.xib */,
 				00FBF17A1C8AF1C30067CC57 /* Assets.xcassets */,
 				00FBF17F1C8AF1C30067CC57 /* Info.plist */,
@@ -155,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CF45261C8C811900637BC0 /* PopViewController.m in Sources */,
 				00FBF1731C8AF1C30067CC57 /* AppDelegate.m in Sources */,
 				00FBF1701C8AF1C30067CC57 /* main.m in Sources */,
 				00D31C191C8BD7F800B939B4 /* NavItem.m in Sources */,

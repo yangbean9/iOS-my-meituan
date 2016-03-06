@@ -10,4 +10,6 @@
 
 @interface NavItem : UIView
 + (instancetype)makeItem;
+
+- (void)addtarget:(id)target action:(SEL)action;
 @end
