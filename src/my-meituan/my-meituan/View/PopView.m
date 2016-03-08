@@ -7,7 +7,11 @@
 //
 
 #import "PopView.h"
+@interface PopView ()
+@property (strong, nonatomic) IBOutlet UITableView *leftTv;
+@property (strong, nonatomic) IBOutlet UITableView *rightTv;
 
+@end
 @implementation PopView
 
 + (PopView *)makePopView {
