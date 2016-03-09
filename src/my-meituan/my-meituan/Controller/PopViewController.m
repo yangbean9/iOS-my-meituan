@@ -8,6 +8,7 @@
 
 #import "PopViewController.h"
 #import "popView.h"
+#import "CategoriyModel.h"
 
 @interface PopViewController ()
 
@@ -20,6 +21,16 @@
     
     popView *pop = [popView makePopView];
     [self.view addSubview:pop];
+    pop.categoryArr = [self getData];
+    pop.autoresizingMask = UIViewAutoresizingNone;
+    self.preferredContentSize = CGSizeMake(pop.frame.size.width, pop.frame.size.height);
+}
+
+//获取到 第一个分类数据下拉菜单的模型数组
+- (NSArray *)getData{
+    CategoriyModel *md = [[CategoriyModel alloc]init];
+    NSArray *categorieyArray = [md loadPlistData];
+    return categorieyArray;
 }
 
 - (void)didReceiveMemoryWarning {

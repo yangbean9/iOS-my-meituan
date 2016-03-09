@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0076FC3F1C906B680035EBD1 /* popView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0076FC3D1C906B680035EBD1 /* popView.m */; };
-		0076FC401C906B680035EBD1 /* popView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0076FC3E1C906B680035EBD1 /* popView.xib */; };
+		003127721C906ECD002CD312 /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0031276E1C906ECD002CD312 /* categories.plist */; };
+		003127731C906ECD002CD312 /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0031276F1C906ECD002CD312 /* cities.plist */; };
+		003127741C906ECD002CD312 /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 003127701C906ECD002CD312 /* cityGroups.plist */; };
+		003127771C906EEF002CD312 /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 003127761C906EEF002CD312 /* sorts.plist */; };
+		0031277A1C906FC1002CD312 /* CategoriyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003127791C906FC1002CD312 /* CategoriyModel.m */; };
+		0031277E1C907115002CD312 /* popView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0031277C1C907115002CD312 /* popView.m */; };
+		0031277F1C907115002CD312 /* popView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0031277D1C907115002CD312 /* popView.xib */; };
 		009852111C8F21A70080C09D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0098520C1C8F21A70080C09D /* FirstViewController.m */; };
 		009852121C8F21A70080C09D /* MyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0098520E1C8F21A70080C09D /* MyNavController.m */; };
 		009852131C8F21A70080C09D /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009852101C8F21A70080C09D /* PopViewController.m */; };
@@ -20,9 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0076FC3C1C906B680035EBD1 /* popView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popView.h; sourceTree = "<group>"; };
-		0076FC3D1C906B680035EBD1 /* popView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popView.m; sourceTree = "<group>"; };
-		0076FC3E1C906B680035EBD1 /* popView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popView.xib; sourceTree = "<group>"; };
+		0031276E1C906ECD002CD312 /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = categories.plist; path = PlistData/categories.plist; sourceTree = "<group>"; };
+		0031276F1C906ECD002CD312 /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = cities.plist; path = PlistData/cities.plist; sourceTree = "<group>"; };
+		003127701C906ECD002CD312 /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = cityGroups.plist; path = PlistData/cityGroups.plist; sourceTree = "<group>"; };
+		003127761C906EEF002CD312 /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sorts.plist; path = PlistData/sorts.plist; sourceTree = "<group>"; };
+		003127781C906FC1002CD312 /* CategoriyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriyModel.h; sourceTree = "<group>"; };
+		003127791C906FC1002CD312 /* CategoriyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriyModel.m; sourceTree = "<group>"; };
+		0031277B1C907115002CD312 /* popView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popView.h; sourceTree = "<group>"; };
+		0031277C1C907115002CD312 /* popView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popView.m; sourceTree = "<group>"; };
+		0031277D1C907115002CD312 /* popView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popView.xib; sourceTree = "<group>"; };
 		0098520B1C8F21A70080C09D /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		0098520C1C8F21A70080C09D /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		0098520D1C8F21A70080C09D /* MyNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavController.h; sourceTree = "<group>"; };
@@ -51,6 +62,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		003127651C906E41002CD312 /* PlistData */ = {
+			isa = PBXGroup;
+			children = (
+				003127761C906EEF002CD312 /* sorts.plist */,
+				0031276E1C906ECD002CD312 /* categories.plist */,
+				0031276F1C906ECD002CD312 /* cities.plist */,
+				003127701C906ECD002CD312 /* cityGroups.plist */,
+			);
+			name = PlistData;
+			sourceTree = "<group>";
+		};
 		0098520A1C8F21A70080C09D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +89,8 @@
 		009852141C8F21C40080C09D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				003127781C906FC1002CD312 /* CategoriyModel.h */,
+				003127791C906FC1002CD312 /* CategoriyModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -74,9 +98,9 @@
 		009852151C8F21C40080C09D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0076FC3C1C906B680035EBD1 /* popView.h */,
-				0076FC3D1C906B680035EBD1 /* popView.m */,
-				0076FC3E1C906B680035EBD1 /* popView.xib */,
+				0031277B1C907115002CD312 /* popView.h */,
+				0031277C1C907115002CD312 /* popView.m */,
+				0031277D1C907115002CD312 /* popView.xib */,
 				009852161C8F21C40080C09D /* NavItem.h */,
 				009852171C8F21C40080C09D /* NavItem.m */,
 				009852181C8F21C40080C09D /* NavItem.xib */,
@@ -109,7 +133,6 @@
 				00FBF1711C8AF1C30067CC57 /* AppDelegate.h */,
 				00FBF1721C8AF1C30067CC57 /* AppDelegate.m */,
 				00FBF17A1C8AF1C30067CC57 /* Assets.xcassets */,
-				00FBF17F1C8AF1C30067CC57 /* Info.plist */,
 				00FBF16E1C8AF1C30067CC57 /* Supporting Files */,
 			);
 			path = "my-meituan";
@@ -118,6 +141,8 @@
 		00FBF16E1C8AF1C30067CC57 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				003127651C906E41002CD312 /* PlistData */,
+				00FBF17F1C8AF1C30067CC57 /* Info.plist */,
 				00FBF16F1C8AF1C30067CC57 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -180,9 +205,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0031277F1C907115002CD312 /* popView.xib in Resources */,
+				003127731C906ECD002CD312 /* cities.plist in Resources */,
+				003127721C906ECD002CD312 /* categories.plist in Resources */,
 				0098521D1C8F21C40080C09D /* NavItem.xib in Resources */,
+				003127741C906ECD002CD312 /* cityGroups.plist in Resources */,
 				00FBF17B1C8AF1C30067CC57 /* Assets.xcassets in Resources */,
-				0076FC401C906B680035EBD1 /* popView.xib in Resources */,
+				003127771C906EEF002CD312 /* sorts.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,9 +225,10 @@
 				00FBF1731C8AF1C30067CC57 /* AppDelegate.m in Sources */,
 				009852131C8F21A70080C09D /* PopViewController.m in Sources */,
 				0098521C1C8F21C40080C09D /* NavItem.m in Sources */,
+				0031277A1C906FC1002CD312 /* CategoriyModel.m in Sources */,
 				009852111C8F21A70080C09D /* FirstViewController.m in Sources */,
-				0076FC3F1C906B680035EBD1 /* popView.m in Sources */,
 				00FBF1701C8AF1C30067CC57 /* main.m in Sources */,
+				0031277E1C907115002CD312 /* popView.m in Sources */,
 				009852121C8F21A70080C09D /* MyNavController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
