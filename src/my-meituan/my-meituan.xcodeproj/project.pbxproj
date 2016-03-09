@@ -7,37 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00CF45261C8C811900637BC0 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CF45251C8C811900637BC0 /* PopViewController.m */; };
-		00D1C14B1C8DC8FE00B1739F /* PopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C14A1C8DC8FE00B1739F /* PopView.m */; };
-		00D1C14D1C8DC9ED00B1739F /* PopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D1C14C1C8DC9ED00B1739F /* PopView.xib */; };
-		00D31C161C8BD4EF00B939B4 /* NavItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D31C151C8BD4EF00B939B4 /* NavItem.xib */; };
-		00D31C191C8BD7F800B939B4 /* NavItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D31C181C8BD7F800B939B4 /* NavItem.m */; };
+		0076FC3F1C906B680035EBD1 /* popView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0076FC3D1C906B680035EBD1 /* popView.m */; };
+		0076FC401C906B680035EBD1 /* popView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0076FC3E1C906B680035EBD1 /* popView.xib */; };
+		009852111C8F21A70080C09D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0098520C1C8F21A70080C09D /* FirstViewController.m */; };
+		009852121C8F21A70080C09D /* MyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0098520E1C8F21A70080C09D /* MyNavController.m */; };
+		009852131C8F21A70080C09D /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009852101C8F21A70080C09D /* PopViewController.m */; };
+		0098521C1C8F21C40080C09D /* NavItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 009852171C8F21C40080C09D /* NavItem.m */; };
+		0098521D1C8F21C40080C09D /* NavItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009852181C8F21C40080C09D /* NavItem.xib */; };
 		00FBF1701C8AF1C30067CC57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF16F1C8AF1C30067CC57 /* main.m */; };
 		00FBF1731C8AF1C30067CC57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF1721C8AF1C30067CC57 /* AppDelegate.m */; };
 		00FBF17B1C8AF1C30067CC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FBF17A1C8AF1C30067CC57 /* Assets.xcassets */; };
-		00FBF1871C8B14DF0067CC57 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF1861C8B14DF0067CC57 /* FirstViewController.m */; };
-		00FBF18A1C8B17B10067CC57 /* MyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF1891C8B17B10067CC57 /* MyNavController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00CF45241C8C811900637BC0 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
-		00CF45251C8C811900637BC0 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
-		00D1C1491C8DC8FE00B1739F /* PopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopView.h; sourceTree = "<group>"; };
-		00D1C14A1C8DC8FE00B1739F /* PopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopView.m; sourceTree = "<group>"; };
-		00D1C14C1C8DC9ED00B1739F /* PopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopView.xib; sourceTree = "<group>"; };
-		00D31C151C8BD4EF00B939B4 /* NavItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavItem.xib; sourceTree = "<group>"; };
-		00D31C171C8BD7F800B939B4 /* NavItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavItem.h; sourceTree = "<group>"; };
-		00D31C181C8BD7F800B939B4 /* NavItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavItem.m; sourceTree = "<group>"; };
+		0076FC3C1C906B680035EBD1 /* popView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popView.h; sourceTree = "<group>"; };
+		0076FC3D1C906B680035EBD1 /* popView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popView.m; sourceTree = "<group>"; };
+		0076FC3E1C906B680035EBD1 /* popView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popView.xib; sourceTree = "<group>"; };
+		0098520B1C8F21A70080C09D /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		0098520C1C8F21A70080C09D /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		0098520D1C8F21A70080C09D /* MyNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavController.h; sourceTree = "<group>"; };
+		0098520E1C8F21A70080C09D /* MyNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavController.m; sourceTree = "<group>"; };
+		0098520F1C8F21A70080C09D /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		009852101C8F21A70080C09D /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		009852161C8F21C40080C09D /* NavItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavItem.h; sourceTree = "<group>"; };
+		009852171C8F21C40080C09D /* NavItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavItem.m; sourceTree = "<group>"; };
+		009852181C8F21C40080C09D /* NavItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavItem.xib; sourceTree = "<group>"; };
 		00FBF16B1C8AF1C30067CC57 /* my-meituan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-meituan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FBF16F1C8AF1C30067CC57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00FBF1711C8AF1C30067CC57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00FBF1721C8AF1C30067CC57 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		00FBF17A1C8AF1C30067CC57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00FBF17F1C8AF1C30067CC57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00FBF1851C8B14DF0067CC57 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		00FBF1861C8B14DF0067CC57 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		00FBF1881C8B17B10067CC57 /* MyNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavController.h; sourceTree = "<group>"; };
-		00FBF1891C8B17B10067CC57 /* MyNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +51,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0098520A1C8F21A70080C09D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0098520B1C8F21A70080C09D /* FirstViewController.h */,
+				0098520C1C8F21A70080C09D /* FirstViewController.m */,
+				0098520D1C8F21A70080C09D /* MyNavController.h */,
+				0098520E1C8F21A70080C09D /* MyNavController.m */,
+				0098520F1C8F21A70080C09D /* PopViewController.h */,
+				009852101C8F21A70080C09D /* PopViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		009852141C8F21C40080C09D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		009852151C8F21C40080C09D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0076FC3C1C906B680035EBD1 /* popView.h */,
+				0076FC3D1C906B680035EBD1 /* popView.m */,
+				0076FC3E1C906B680035EBD1 /* popView.xib */,
+				009852161C8F21C40080C09D /* NavItem.h */,
+				009852171C8F21C40080C09D /* NavItem.m */,
+				009852181C8F21C40080C09D /* NavItem.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		00FBF1621C8AF1C30067CC57 = {
 			isa = PBXGroup;
 			children = (
@@ -70,20 +103,11 @@
 		00FBF16D1C8AF1C30067CC57 /* my-meituan */ = {
 			isa = PBXGroup;
 			children = (
-				00D31C171C8BD7F800B939B4 /* NavItem.h */,
-				00D31C181C8BD7F800B939B4 /* NavItem.m */,
+				009852141C8F21C40080C09D /* Model */,
+				009852151C8F21C40080C09D /* View */,
+				0098520A1C8F21A70080C09D /* Controller */,
 				00FBF1711C8AF1C30067CC57 /* AppDelegate.h */,
 				00FBF1721C8AF1C30067CC57 /* AppDelegate.m */,
-				00FBF1851C8B14DF0067CC57 /* FirstViewController.h */,
-				00FBF1861C8B14DF0067CC57 /* FirstViewController.m */,
-				00FBF1881C8B17B10067CC57 /* MyNavController.h */,
-				00FBF1891C8B17B10067CC57 /* MyNavController.m */,
-				00CF45241C8C811900637BC0 /* PopViewController.h */,
-				00CF45251C8C811900637BC0 /* PopViewController.m */,
-				00D1C1491C8DC8FE00B1739F /* PopView.h */,
-				00D1C14A1C8DC8FE00B1739F /* PopView.m */,
-				00D1C14C1C8DC9ED00B1739F /* PopView.xib */,
-				00D31C151C8BD4EF00B939B4 /* NavItem.xib */,
 				00FBF17A1C8AF1C30067CC57 /* Assets.xcassets */,
 				00FBF17F1C8AF1C30067CC57 /* Info.plist */,
 				00FBF16E1C8AF1C30067CC57 /* Supporting Files */,
@@ -156,9 +180,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00D31C161C8BD4EF00B939B4 /* NavItem.xib in Resources */,
+				0098521D1C8F21C40080C09D /* NavItem.xib in Resources */,
 				00FBF17B1C8AF1C30067CC57 /* Assets.xcassets in Resources */,
-				00D1C14D1C8DC9ED00B1739F /* PopView.xib in Resources */,
+				0076FC401C906B680035EBD1 /* popView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,13 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00D1C14B1C8DC8FE00B1739F /* PopView.m in Sources */,
-				00CF45261C8C811900637BC0 /* PopViewController.m in Sources */,
 				00FBF1731C8AF1C30067CC57 /* AppDelegate.m in Sources */,
+				009852131C8F21A70080C09D /* PopViewController.m in Sources */,
+				0098521C1C8F21C40080C09D /* NavItem.m in Sources */,
+				009852111C8F21A70080C09D /* FirstViewController.m in Sources */,
+				0076FC3F1C906B680035EBD1 /* popView.m in Sources */,
 				00FBF1701C8AF1C30067CC57 /* main.m in Sources */,
-				00D31C191C8BD7F800B939B4 /* NavItem.m in Sources */,
-				00FBF1871C8B14DF0067CC57 /* FirstViewController.m in Sources */,
-				00FBF18A1C8B17B10067CC57 /* MyNavController.m in Sources */,
+				009852121C8F21A70080C09D /* MyNavController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

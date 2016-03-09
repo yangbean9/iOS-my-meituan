@@ -7,7 +7,7 @@
 //
 
 #import "PopViewController.h"
-#import "PopView.h"
+#import "popView.h"
 
 @interface PopViewController ()
 
@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    PopView *pop = [PopView makePopView];
+    popView *pop = [popView makePopView];
     [self.view addSubview:pop];
 }
 
