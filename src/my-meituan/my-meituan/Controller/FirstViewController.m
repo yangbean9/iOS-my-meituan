@@ -9,6 +9,7 @@
 #import "FirstViewController.h"
 #import "NavItem.h"
 #import "PopViewController.h"
+#import "SecondPopverViewController.h"
 
 @interface FirstViewController () {
     UIBarButtonItem *item1;
@@ -60,6 +61,7 @@
 
 - (void) item2click {
     NSLog(@"item2");
+    [self createSecondPopver];
 }
 
 - (void) item3click {
@@ -73,6 +75,13 @@
     UIPopoverController *popc = [[UIPopoverController alloc]initWithContentViewController:pvc];
     [popc presentPopoverFromBarButtonItem:item1 permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
     
+}
+
+#pragma mark - 第二个下拉菜单
+- (void)createSecondPopver{
+    SecondPopverViewController *svc = [[SecondPopverViewController alloc]initWithNibName:@"SecondPopverViewController" bundle:nil];;
+    UIPopoverController *pop = [[UIPopoverController alloc]initWithContentViewController:svc];
+    [pop presentPopoverFromBarButtonItem:item2 permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
 @end
