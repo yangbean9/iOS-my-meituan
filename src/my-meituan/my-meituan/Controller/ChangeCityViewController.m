@@ -1,17 +1,23 @@
 //
 //  ChangeCityViewController.m
-//  my-meituan
+//  团购项目
 //
-//  Created by robin young on 16/3/12.
-//  Copyright © 2016年 robin young. All rights reserved.
+//  Created by lb on 15/6/16.
+//  Copyright (c) 2015年 lbcoder. All rights reserved.
 //
 
 #import "ChangeCityViewController.h"
 #import "CityGroupsModel.h"
+#import "SearchCityResultViewController.h"
+#import "UIView+AutoLayout.h"
 
-@interface ChangeCityViewController ()<UITableViewDataSource,UITableViewDelegate>{
+@interface ChangeCityViewController ()<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate>{
     NSArray *_dataArray;
 }
+@property (weak, nonatomic) IBOutlet UIView *coverView;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+
+@property (strong, nonatomic) SearchCityResultViewController *searchResultVC;
 
 @end
 
@@ -58,6 +64,46 @@
     CityGroupsModel *md = [_dataArray objectAtIndex:section];
     return md.title;
 }
+
+#pragma mark - UISearchBar delegate
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar{
+    self.coverView.hidden = NO;
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar{
+    self.coverView.hidden = YES;
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+
+}
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    if (searchText.length) {
+        self.searchResultVC.view.hidden = NO;
+    }
+    else{
+        self.searchResultVC.view.hidden = YES;
+
+    }
+}
+
+#pragma mark - 创建搜索结果控制器
+- (SearchCityResultViewController *)searchResultVC{
+    //懒加在
+    if (!_searchResultVC) {
+        self.searchResultVC = [[SearchCityResultViewController alloc]init];
+        //将搜索结果VC添加到当前控制器中
+        [self.view addSubview:_searchResultVC.view];
+        //添加约束 设置搜索结果控制器的尺寸位置
+        [self.searchResultVC.view autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeTop];
+        //让searchResultVC的顶部 贴着搜索框的底部  不遮盖住搜索框
+        [self.searchResultVC.view autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.searchBar];
+        
+        
+    }
+    return _searchResultVC;
+}
+
 
 
 
