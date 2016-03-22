@@ -2,18 +2,18 @@
 //  popView.m
 //  my-meituan
 //
-//  Created by robin young on 16/3/9.
+//  Created by robin young on 16/3/22.
 //  Copyright © 2016年 robin young. All rights reserved.
 //
 
 #import "popView.h"
-#import "CategoriyModel.h"
 
 @interface popView ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *leftTV;
 @property (weak, nonatomic) IBOutlet UITableView *rightTV;
-@property (strong,nonatomic) CategoriyModel *seletedModel;
+
+@property (nonatomic,assign) NSInteger selectRow;
 
 @end
 
@@ -23,13 +23,12 @@
     return [[[NSBundle mainBundle]loadNibNamed:@"popView" owner:self options:nil]firstObject];
 }
 
-
 #pragma mark - tableview delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (tableView == _leftTV) {
-        return _categoryArr.count;
+        return [self.dataSource numberOfRowsInLeftTable:self];
     }else{
-        return _seletedModel.subcategories.count;
+        return [self.dataSource popView:self subDataForRow:_selectRow].count;
     }
 }
 
@@ -40,29 +39,32 @@
         if (cell == nil) {
             cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:str];
         }
-        CategoriyModel *md = [_categoryArr objectAtIndex:indexPath.row];
-        cell.textLabel.text = md.name;
-        cell.imageView.image = [UIImage imageNamed:md.small_icon];
-        if (md.subcategories.count) {
+        cell.textLabel.text = [self.dataSource popView:self titleForRow:indexPath.row];
+        cell.imageView.image = [UIImage imageNamed:[self.dataSource popView:self imageForRow:indexPath.row]];
+        
+        NSArray *subDataArray = [self.dataSource popView:self subDataForRow:indexPath.row];
+        
+        if (subDataArray.count) {
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         }else{
             cell.accessoryType = UITableViewCellAccessoryNone;
         }
         return cell;
+        
     }else{
         static NSString *str = @"Mycell";
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:str];
         if (cell == nil) {
             cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:str];
         }
-        cell.textLabel.text = _seletedModel.subcategories[indexPath.row];
+        cell.textLabel.text = [self.dataSource popView:self subDataForRow:_selectRow][indexPath.row];
         return cell;
     }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (tableView == _leftTV) {
-        _seletedModel = [_categoryArr objectAtIndex:indexPath.row];
+        self.selectRow = indexPath.row;
         [_rightTV reloadData];
     }
 }

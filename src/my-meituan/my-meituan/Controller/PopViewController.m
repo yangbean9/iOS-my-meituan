@@ -1,16 +1,16 @@
 //
 //  PopViewController.m
-//  my-meituan
+//  团购项目
 //
-//  Created by robin young on 16/3/6.
-//  Copyright © 2016年 robin young. All rights reserved.
+//  Created by lb on 15/5/27.
+//  Copyright (c) 2015年 lbcoder. All rights reserved.
 //
 
 #import "PopViewController.h"
 #import "popView.h"
 #import "CategoriyModel.h"
 
-@interface PopViewController ()
+@interface PopViewController ()<MyPopviewDataSource>
 
 @end
 
@@ -18,10 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     popView *pop = [popView makePopView];
     [self.view addSubview:pop];
-    pop.categoryArr = [self getData];
+    pop.dataSource = self;
     pop.autoresizingMask = UIViewAutoresizingNone;
     self.preferredContentSize = CGSizeMake(pop.frame.size.width, pop.frame.size.height);
 }
@@ -33,19 +33,22 @@
     return categorieyArray;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+#pragma mark - popview dataSource
+- (NSInteger)numberOfRowsInLeftTable:(popView *)popView{
+    return [self getData].count;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSString *)popView:(popView *)popView titleForRow:(int)row{
+    return [[self getData][row]name];
 }
-*/
+
+- (NSString *)popView:(popView *)popView imageForRow:(int)row{
+    return [[self getData][row]small_icon];
+}
+
+- (NSArray *)popView:(popView *)popView subDataForRow:(int)row{
+    return [[self getData][row]subcategories];
+}
 
 @end
