@@ -78,8 +78,8 @@
 }
 
 #pragma mark - 第二个下拉菜单
-- (void)createSecondPopver{
-    SecondPopverViewController *svc = [[SecondPopverViewController alloc]initWithNibName:@"SecondPopverViewController" bundle:nil];;
+- (void)createSecondPopver {
+    SecondPopverViewController *svc = [[SecondPopverViewController alloc]initWithNibName:@"SecondPopverViewController" bundle:nil];
     UIPopoverController *pop = [[UIPopoverController alloc]initWithContentViewController:svc];
     [pop presentPopoverFromBarButtonItem:item2 permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
