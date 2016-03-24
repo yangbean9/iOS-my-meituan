@@ -62,10 +62,22 @@
     }
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (tableView == _leftTV) {
         self.selectRow = indexPath.row;
         [_rightTV reloadData];
+        
+        //
+        if ([self.delegate respondsToSelector:@selector(popView:didSelectRowAtLeftTable:)]) {
+            //进一步实现
+            [self.delegate popView:self didSelectRowAtLeftTable:indexPath.row];
+        }
+    } else {
+        //
+        if ([self.delegate respondsToSelector:@selector(popView:didSelectRowAtRightTable:)]) {
+            //进一步实现
+            [self.delegate popView:self didSelectRowAtRightTable:indexPath.row];
+        }
     }
 }
 

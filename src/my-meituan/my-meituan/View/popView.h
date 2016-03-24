@@ -31,11 +31,23 @@
 
 @end
 
+@protocol MyPopviewDelegate <NSObject>
+
+//选择左侧表时调用
+- (void)popView:(popView *)popView didSelectRowAtLeftTable:(int)row;
+
+//选择右侧表时调用
+- (void)popView:(popView *)popView didSelectRowAtRightTable:(int)row;
+
+@end
+
 @interface popView : UIView
 
 @property (nonatomic,strong)NSArray *categoryArr;
 
 @property (nonatomic,assign)id<MyPopviewDataSource> dataSource;
+
+@property (nonatomic,assign)id<MyPopviewDelegate> delegate;
 
 + (popView*)makePopView;
 
