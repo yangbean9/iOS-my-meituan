@@ -10,6 +10,8 @@
 #import "NavItem.h"
 #import "PopViewController.h"
 #import "SecondPopverViewController.h"
+#import "CityGroupsModel.h"
+#import "CategoriyModel.h"
 
 @interface FirstViewController () {
     UIBarButtonItem *item1;
@@ -29,7 +31,26 @@
     [super viewDidLoad];
     self.collectionView.backgroundColor = [UIColor whiteColor];
     [self createNavBar];
+    // Register cell classes
+//    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    //添加观察者
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(categoryChange:) name:@"categoryDidChanged" object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(subCategoryChange:) name:@"subCategoryDidChanged" object:nil];
 }
+
+- (void)categoryChange:(NSNotification*)noti{
+    CategoriyModel *md = (CategoriyModel*)noti.userInfo[@"categoryModel"];
+    NSString *str = noti.userInfo[@"subCategoryName"];
+    NSLog(@"左表：%@",md.name);
+    NSLog(@"右表：%@",str);
+    
+}
+
+- (void)subCategoryChange:(NSNotification*)noti{
+    NSString *str = noti.userInfo[@"subCategoryName"];
+    NSLog(@"从表%@",str);
+}
+
 
 #pragma mark -创建导航栏
 - (void)createNavBar {

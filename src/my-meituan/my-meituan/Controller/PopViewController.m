@@ -10,7 +10,9 @@
 #import "popView.h"
 #import "CategoriyModel.h"
 
-@interface PopViewController ()<MyPopviewDataSource>
+@interface PopViewController ()<MyPopviewDataSource,MyPopviewDelegate> {
+     CategoriyModel *_seletedModel;
+}
 
 @end
 
@@ -22,6 +24,7 @@
     popView *pop = [popView makePopView];
     [self.view addSubview:pop];
     pop.dataSource = self;
+    pop.delegate = self;
     pop.autoresizingMask = UIViewAutoresizingNone;
     self.preferredContentSize = CGSizeMake(pop.frame.size.width, pop.frame.size.height);
 }
@@ -49,6 +52,23 @@
 
 - (NSArray *)popView:(popView *)popView subDataForRow:(int)row{
     return [[self getData][row]subcategories];
+}
+
+#pragma mark - popview delegate
+- (void)popView:(popView *)popView didSelectRowAtLeftTable:(int)row {
+    //选择了popview的左侧表格
+    NSArray *categoryArr = [self getData];
+    _seletedModel = categoryArr[row];
+    //有没有子数据
+    if (!_seletedModel.subcategories.count) {
+        //发送通知
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"categoryDidChanged" object:nil userInfo:@{@"categoryModel":_seletedModel}];
+    }
+}
+
+- (void)popView:(popView *)popView didSelectRowAtRightTable:(int)row {
+    NSArray *subArr = _seletedModel.subcategories;
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"categoryDidChanged" object:nil userInfo:@{@"subCategoryName":subArr[row]}];
 }
 
 @end
