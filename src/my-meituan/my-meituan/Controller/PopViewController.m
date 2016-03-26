@@ -1,9 +1,9 @@
 //
 //  PopViewController.m
-//  团购项目
+//  my-meituan
 //
-//  Created by lb on 15/5/27.
-//  Copyright (c) 2015年 lbcoder. All rights reserved.
+//  Created by robin young on 16/3/6.
+//  Copyright © 2016年 robin young. All rights reserved.
 //
 
 #import "PopViewController.h"
