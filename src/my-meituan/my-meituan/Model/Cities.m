@@ -10,7 +10,7 @@
 
 @implementation Cities
 
-+ (NSArray *)getCities{
++ (NSArray *)getCities {
     //1.获取plist文件的地址
     NSString *path = [[NSBundle mainBundle]pathForResource:@"cities.plist" ofType:nil];
     //2.加载plist文件为数组

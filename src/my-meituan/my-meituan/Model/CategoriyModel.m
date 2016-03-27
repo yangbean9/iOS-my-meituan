@@ -11,7 +11,7 @@
 @implementation CategoriyModel
 
 //加载plist文件
-- (NSArray *)loadPlistData{
+- (NSArray *)loadPlistData {
     //获取plist文件地址
     NSString *file = [[NSBundle mainBundle]pathForResource:@"categories.plist" ofType:nil];
     //加载plist为数组
@@ -21,7 +21,7 @@
 }
 
 //字典转模型
-- (CategoriyModel *)makeModelWithDict:(NSDictionary *)dict{
+- (CategoriyModel *)makeModelWithDict:(NSDictionary *)dict {
     self.highlighted_icon = [dict objectForKey:@"highlighted_icon"];
     self.icon = [dict objectForKey:@"icon"];
     self.small_highlighted_icon = [dict objectForKey:@"small_highlighted_icon"];
@@ -32,7 +32,7 @@
 }
 
 //解析
-- (NSArray *)getDataWithArray:(NSArray *)array{
+- (NSArray *)getDataWithArray:(NSArray *)array {
     NSMutableArray *Arr = [[NSMutableArray alloc]init];
     for (NSDictionary *dict in array) {
         CategoriyModel *md = [[CategoriyModel alloc]init];

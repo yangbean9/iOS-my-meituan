@@ -19,20 +19,20 @@
 
 @implementation popView
 
-+ (popView *)makePopView{
++ (popView *)makePopView {
     return [[[NSBundle mainBundle]loadNibNamed:@"popView" owner:self options:nil]firstObject];
 }
 
 #pragma mark - tableview delegate
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView == _leftTV) {
         return [self.dataSource numberOfRowsInLeftTable:self];
-    }else{
+    } else {
         return [self.dataSource popView:self subDataForRow:_selectRow].count;
     }
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (tableView == _leftTV) {
         static NSString *str = @"Mycell";
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:str];
@@ -46,12 +46,12 @@
         
         if (subDataArray.count) {
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        }else{
+        } else {
             cell.accessoryType = UITableViewCellAccessoryNone;
         }
         return cell;
         
-    }else{
+    } else {
         static NSString *str = @"Mycell";
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:str];
         if (cell == nil) {

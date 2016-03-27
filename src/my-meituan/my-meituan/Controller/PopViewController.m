@@ -30,7 +30,7 @@
 }
 
 //获取到 第一个分类数据下拉菜单的模型数组
-- (NSArray *)getData{
+- (NSArray *)getData {
     CategoriyModel *md = [[CategoriyModel alloc]init];
     NSArray *categorieyArray = [md loadPlistData];
     return categorieyArray;
@@ -38,19 +38,19 @@
 
 
 #pragma mark - popview dataSource
-- (NSInteger)numberOfRowsInLeftTable:(popView *)popView{
+- (NSInteger)numberOfRowsInLeftTable:(popView *)popView {
     return [self getData].count;
 }
 
-- (NSString *)popView:(popView *)popView titleForRow:(int)row{
+- (NSString *)popView:(popView *)popView titleForRow:(int)row {
     return [[self getData][row]name];
 }
 
-- (NSString *)popView:(popView *)popView imageForRow:(int)row{
+- (NSString *)popView:(popView *)popView imageForRow:(int)row {
     return [[self getData][row]small_icon];
 }
 
-- (NSArray *)popView:(popView *)popView subDataForRow:(int)row{
+- (NSArray *)popView:(popView *)popView subDataForRow:(int)row {
     return [[self getData][row]subcategories];
 }
 

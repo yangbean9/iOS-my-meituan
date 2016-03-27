@@ -8,7 +8,7 @@
 
 #import "CityGroupsModel.h"
 
-@implementation CityGroupsModel{
+@implementation CityGroupsModel {
     NSArray *_plistArray;
 }
 
@@ -19,13 +19,13 @@
     return self;
 }
 
-- (void)loadPlist{
+- (void)loadPlist {
     NSString *path = [[NSBundle mainBundle]pathForResource:@"cityGroups.plist" ofType:nil];
     _plistArray = [NSArray arrayWithContentsOfFile:path];
     
 }
 
-- (NSArray *)getModelArray{
+- (NSArray *)getModelArray {
     NSMutableArray *dataArray = [[NSMutableArray alloc]init];
     for (NSDictionary *dict in _plistArray) {
         CityGroupsModel *md = [[CityGroupsModel alloc]init];

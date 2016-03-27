@@ -38,7 +38,7 @@
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(subCategoryChange:) name:@"subCategoryDidChanged" object:nil];
 }
 
-- (void)categoryChange:(NSNotification*)noti{
+- (void)categoryChange:(NSNotification*)noti {
     CategoriyModel *md = (CategoriyModel*)noti.userInfo[@"categoryModel"];
     NSString *str = noti.userInfo[@"subCategoryName"];
     NSLog(@"左表：%@",md.name);
@@ -46,7 +46,7 @@
     
 }
 
-- (void)subCategoryChange:(NSNotification*)noti{
+- (void)subCategoryChange:(NSNotification*)noti {
     NSString *str = noti.userInfo[@"subCategoryName"];
     NSLog(@"从表%@",str);
 }
