@@ -17,6 +17,9 @@
     UIBarButtonItem *item1;
     UIBarButtonItem *item2;
     UIBarButtonItem *item3;
+    
+    NSString *_selectedCityName;
+    NSString *_selectedCategory;
 }
 @end
 
@@ -40,15 +43,15 @@
 
 - (void)categoryChange:(NSNotification*)noti {
     CategoriyModel *md = (CategoriyModel*)noti.userInfo[@"categoryModel"];
-    NSString *str = noti.userInfo[@"subCategoryName"];
-    NSLog(@"左表：%@",md.name);
-    NSLog(@"右表：%@",str);
-    
+    NSLog(@"左表：%@",md.name);    
 }
 
 - (void)subCategoryChange:(NSNotification*)noti {
-    NSString *str = noti.userInfo[@"subCategoryName"];
-    NSLog(@"从表%@",str);
+    CategoriyModel *md = (CategoriyModel*)noti.userInfo[@"categoryModel"];
+    NSString *selectedSubName = noti.userInfo[@"subCategoryName"];
+    NSLog(@"左表：%@",md.name);
+    NSLog(@"右表：%@",selectedSubName);
+
 }
 
 
