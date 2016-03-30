@@ -14,21 +14,22 @@
 		0031277A1C906FC1002CD312 /* CategoriyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003127791C906FC1002CD312 /* CategoriyModel.m */; };
 		0031277F1C907115002CD312 /* popView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0031277D1C907115002CD312 /* popView.xib */; };
 		0069B7311C9C468B00E76DBF /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0069B7301C9C468B00E76DBF /* Cities.m */; };
-		009852111C8F21A70080C09D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0098520C1C8F21A70080C09D /* FirstViewController.m */; };
 		009852121C8F21A70080C09D /* MyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0098520E1C8F21A70080C09D /* MyNavController.m */; };
 		0098521C1C8F21C40080C09D /* NavItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 009852171C8F21C40080C09D /* NavItem.m */; };
 		0098521D1C8F21C40080C09D /* NavItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009852181C8F21C40080C09D /* NavItem.xib */; };
 		00A2E5EC1C95AF720026A3A2 /* ChangeCityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A2E5EB1C95AF720026A3A2 /* ChangeCityViewController.xib */; };
-		00A2E5EF1C95AFD90026A3A2 /* ChangeCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A2E5EE1C95AFD90026A3A2 /* ChangeCityViewController.m */; };
 		00CC80241C9460FD00D0EC18 /* SecondPopverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00CC80231C9460FD00D0EC18 /* SecondPopverViewController.xib */; };
+		00CE1D5A1CAC182E002E08BB /* ChangeCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CE1D571CAC182E002E08BB /* ChangeCityViewController.m */; };
+		00CE1D5B1CAC182E002E08BB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CE1D581CAC182E002E08BB /* FirstViewController.m */; };
+		00CE1D5C1CAC182E002E08BB /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CE1D591CAC182E002E08BB /* PopViewController.m */; };
+		00CE1D5F1CAC1870002E08BB /* SearchCityResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CE1D5E1CAC1870002E08BB /* SearchCityResultViewController.m */; };
+		00CE1D631CAC1997002E08BB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00CE1D621CAC1997002E08BB /* Info.plist */; };
 		00D3CCB61CAAC74E000951F3 /* DPAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D3CCB21CAAC74E000951F3 /* DPAPI.m */; };
 		00D3CCB71CAAC74E000951F3 /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D3CCB51CAAC74E000951F3 /* DPRequest.m */; };
 		00DCACC81CA18DEA00D4C814 /* popView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DCACC71CA18DEA00D4C814 /* popView.m */; };
-		00DCACCA1CA18EBA00D4C814 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DCACC91CA18EBA00D4C814 /* PopViewController.m */; };
 		00EAA38C1C91C19E00B547D3 /* CityGroupsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EAA38B1C91C19E00B547D3 /* CityGroupsModel.m */; };
 		00EAA3931C91C2F600B547D3 /* SecondPopverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EAA3911C91C2F600B547D3 /* SecondPopverViewController.m */; };
 		00FB369F1C9AF36200DDE637 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB369E1C9AF36200DDE637 /* UIView+AutoLayout.m */; };
-		00FB36A21C9AF38000DDE637 /* SearchCityResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB36A11C9AF38000DDE637 /* SearchCityResultViewController.m */; };
 		00FBF1701C8AF1C30067CC57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF16F1C8AF1C30067CC57 /* main.m */; };
 		00FBF1731C8AF1C30067CC57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF1721C8AF1C30067CC57 /* AppDelegate.m */; };
 		00FBF17B1C8AF1C30067CC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FBF17A1C8AF1C30067CC57 /* Assets.xcassets */; };
@@ -45,7 +46,6 @@
 		0069B72F1C9C468B00E76DBF /* Cities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cities.h; sourceTree = "<group>"; };
 		0069B7301C9C468B00E76DBF /* Cities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cities.m; sourceTree = "<group>"; };
 		0098520B1C8F21A70080C09D /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		0098520C1C8F21A70080C09D /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		0098520D1C8F21A70080C09D /* MyNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavController.h; sourceTree = "<group>"; };
 		0098520E1C8F21A70080C09D /* MyNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavController.m; sourceTree = "<group>"; };
 		0098520F1C8F21A70080C09D /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
@@ -54,8 +54,13 @@
 		009852181C8F21C40080C09D /* NavItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavItem.xib; sourceTree = "<group>"; };
 		00A2E5EB1C95AF720026A3A2 /* ChangeCityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeCityViewController.xib; sourceTree = "<group>"; };
 		00A2E5ED1C95AFD90026A3A2 /* ChangeCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeCityViewController.h; sourceTree = "<group>"; };
-		00A2E5EE1C95AFD90026A3A2 /* ChangeCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeCityViewController.m; sourceTree = "<group>"; };
 		00CC80231C9460FD00D0EC18 /* SecondPopverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondPopverViewController.xib; sourceTree = "<group>"; };
+		00CE1D571CAC182E002E08BB /* ChangeCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeCityViewController.m; sourceTree = "<group>"; };
+		00CE1D581CAC182E002E08BB /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		00CE1D591CAC182E002E08BB /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		00CE1D5D1CAC1870002E08BB /* SearchCityResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCityResultViewController.h; sourceTree = "<group>"; };
+		00CE1D5E1CAC1870002E08BB /* SearchCityResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCityResultViewController.m; sourceTree = "<group>"; };
+		00CE1D621CAC1997002E08BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00D3CCB11CAAC74E000951F3 /* DPAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAPI.h; sourceTree = "<group>"; };
 		00D3CCB21CAAC74E000951F3 /* DPAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAPI.m; sourceTree = "<group>"; };
 		00D3CCB31CAAC74E000951F3 /* DPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConstants.h; sourceTree = "<group>"; };
@@ -63,21 +68,17 @@
 		00D3CCB51CAAC74E000951F3 /* DPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRequest.m; sourceTree = "<group>"; };
 		00DCACC61CA18DEA00D4C814 /* popView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popView.h; sourceTree = "<group>"; };
 		00DCACC71CA18DEA00D4C814 /* popView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popView.m; sourceTree = "<group>"; };
-		00DCACC91CA18EBA00D4C814 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
 		00EAA38A1C91C19E00B547D3 /* CityGroupsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityGroupsModel.h; sourceTree = "<group>"; };
 		00EAA38B1C91C19E00B547D3 /* CityGroupsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityGroupsModel.m; sourceTree = "<group>"; };
 		00EAA3901C91C2F600B547D3 /* SecondPopverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondPopverViewController.h; sourceTree = "<group>"; };
 		00EAA3911C91C2F600B547D3 /* SecondPopverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondPopverViewController.m; sourceTree = "<group>"; };
 		00FB369D1C9AF36200DDE637 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		00FB369E1C9AF36200DDE637 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
-		00FB36A01C9AF38000DDE637 /* SearchCityResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchCityResultViewController.h; path = ../View/SearchCityResultViewController.h; sourceTree = "<group>"; };
-		00FB36A11C9AF38000DDE637 /* SearchCityResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchCityResultViewController.m; path = ../View/SearchCityResultViewController.m; sourceTree = "<group>"; };
 		00FBF16B1C8AF1C30067CC57 /* my-meituan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-meituan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FBF16F1C8AF1C30067CC57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00FBF1711C8AF1C30067CC57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00FBF1721C8AF1C30067CC57 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		00FBF17A1C8AF1C30067CC57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		00FBF17F1C8AF1C30067CC57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,20 +106,20 @@
 		0098520A1C8F21A70080C09D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				00FB36A01C9AF38000DDE637 /* SearchCityResultViewController.h */,
-				00FB36A11C9AF38000DDE637 /* SearchCityResultViewController.m */,
+				00CE1D5D1CAC1870002E08BB /* SearchCityResultViewController.h */,
+				00CE1D5E1CAC1870002E08BB /* SearchCityResultViewController.m */,
+				00CE1D571CAC182E002E08BB /* ChangeCityViewController.m */,
+				00CE1D581CAC182E002E08BB /* FirstViewController.m */,
+				00CE1D591CAC182E002E08BB /* PopViewController.m */,
 				00A2E5ED1C95AFD90026A3A2 /* ChangeCityViewController.h */,
-				00A2E5EE1C95AFD90026A3A2 /* ChangeCityViewController.m */,
 				00A2E5EB1C95AF720026A3A2 /* ChangeCityViewController.xib */,
 				00EAA3901C91C2F600B547D3 /* SecondPopverViewController.h */,
 				00EAA3911C91C2F600B547D3 /* SecondPopverViewController.m */,
 				00CC80231C9460FD00D0EC18 /* SecondPopverViewController.xib */,
 				0098520B1C8F21A70080C09D /* FirstViewController.h */,
-				0098520C1C8F21A70080C09D /* FirstViewController.m */,
 				0098520D1C8F21A70080C09D /* MyNavController.h */,
 				0098520E1C8F21A70080C09D /* MyNavController.m */,
 				0098520F1C8F21A70080C09D /* PopViewController.h */,
-				00DCACC91CA18EBA00D4C814 /* PopViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -213,8 +214,8 @@
 		00FBF16E1C8AF1C30067CC57 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				00CE1D621CAC1997002E08BB /* Info.plist */,
 				003127651C906E41002CD312 /* PlistData */,
-				00FBF17F1C8AF1C30067CC57 /* Info.plist */,
 				00FBF16F1C8AF1C30067CC57 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -285,6 +286,7 @@
 				00FBF17B1C8AF1C30067CC57 /* Assets.xcassets in Resources */,
 				003127771C906EEF002CD312 /* sorts.plist in Resources */,
 				00CC80241C9460FD00D0EC18 /* SecondPopverViewController.xib in Resources */,
+				00CE1D631CAC1997002E08BB /* Info.plist in Resources */,
 				00A2E5EC1C95AF720026A3A2 /* ChangeCityViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,20 +298,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CE1D5F1CAC1870002E08BB /* SearchCityResultViewController.m in Sources */,
 				00D3CCB61CAAC74E000951F3 /* DPAPI.m in Sources */,
 				00FBF1731C8AF1C30067CC57 /* AppDelegate.m in Sources */,
 				00FB369F1C9AF36200DDE637 /* UIView+AutoLayout.m in Sources */,
 				00D3CCB71CAAC74E000951F3 /* DPRequest.m in Sources */,
 				0069B7311C9C468B00E76DBF /* Cities.m in Sources */,
 				00DCACC81CA18DEA00D4C814 /* popView.m in Sources */,
-				00DCACCA1CA18EBA00D4C814 /* PopViewController.m in Sources */,
-				00A2E5EF1C95AFD90026A3A2 /* ChangeCityViewController.m in Sources */,
 				00EAA3931C91C2F600B547D3 /* SecondPopverViewController.m in Sources */,
+				00CE1D5B1CAC182E002E08BB /* FirstViewController.m in Sources */,
 				00EAA38C1C91C19E00B547D3 /* CityGroupsModel.m in Sources */,
 				0098521C1C8F21C40080C09D /* NavItem.m in Sources */,
+				00CE1D5A1CAC182E002E08BB /* ChangeCityViewController.m in Sources */,
 				0031277A1C906FC1002CD312 /* CategoriyModel.m in Sources */,
-				00FB36A21C9AF38000DDE637 /* SearchCityResultViewController.m in Sources */,
-				009852111C8F21A70080C09D /* FirstViewController.m in Sources */,
+				00CE1D5C1CAC182E002E08BB /* PopViewController.m in Sources */,
 				00FBF1701C8AF1C30067CC57 /* main.m in Sources */,
 				009852121C8F21A70080C09D /* MyNavController.m in Sources */,
 			);

@@ -1,9 +1,9 @@
 //
 //  ChangeCityViewController.m
-//  团购项目
+//  my-meituan
 //
-//  Created by lb on 15/6/16.
-//  Copyright (c) 2015年 lbcoder. All rights reserved.
+//  Created by robin young on 16/3/30.
+//  Copyright © 2016年 robin young. All rights reserved.
 //
 
 #import "ChangeCityViewController.h"
@@ -11,7 +11,7 @@
 #import "SearchCityResultViewController.h"
 #import "UIView+AutoLayout.h"
 
-@interface ChangeCityViewController ()<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate> {
+@interface ChangeCityViewController ()<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate>{
     NSArray *_dataArray;
 }
 @property (weak, nonatomic) IBOutlet UIView *coverView;
@@ -36,20 +36,20 @@
     _dataArray = [md getModelArray];
 }
 
-- (void)backToVC {
+- (void)backToVC{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - tableview delegate
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return _dataArray.count;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [[_dataArray objectAtIndex:section] cities].count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *str = @"tableCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:str];
     if (cell == nil) {
@@ -60,26 +60,34 @@
     return cell;
 }
 
-- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     CityGroupsModel *md = [_dataArray objectAtIndex:section];
     return md.title;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    CityGroupsModel *md = [_dataArray objectAtIndex:indexPath.section];
+    
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"cityDidChanged" object:nil userInfo:@{@"cityName":md.cities[indexPath.row]}];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 #pragma mark - UISearchBar delegate
-- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar{
     self.coverView.hidden = NO;
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
-- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar{
     self.coverView.hidden = YES;
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 
 }
 
-- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
     if (searchText.length) {
         self.searchResultVC.view.hidden = NO;
+        self.searchResultVC.searchText = searchText;
     }
     else{
         self.searchResultVC.view.hidden = YES;
@@ -88,7 +96,7 @@
 }
 
 #pragma mark - 创建搜索结果控制器
-- (SearchCityResultViewController *)searchResultVC {
+- (SearchCityResultViewController *)searchResultVC{
     //懒加在
     if (!_searchResultVC) {
         self.searchResultVC = [[SearchCityResultViewController alloc]init];
@@ -104,22 +112,5 @@
     return _searchResultVC;
 }
 
-
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
