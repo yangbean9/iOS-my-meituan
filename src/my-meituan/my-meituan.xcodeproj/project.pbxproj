@@ -29,6 +29,7 @@
 		00DCACC81CA18DEA00D4C814 /* popView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DCACC71CA18DEA00D4C814 /* popView.m */; };
 		00EAA38C1C91C19E00B547D3 /* CityGroupsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EAA38B1C91C19E00B547D3 /* CityGroupsModel.m */; };
 		00EAA3931C91C2F600B547D3 /* SecondPopverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EAA3911C91C2F600B547D3 /* SecondPopverViewController.m */; };
+		00ED73CD1CAEC23500F02390 /* DealModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ED73CC1CAEC23500F02390 /* DealModel.m */; };
 		00FB369F1C9AF36200DDE637 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB369E1C9AF36200DDE637 /* UIView+AutoLayout.m */; };
 		00FBF1701C8AF1C30067CC57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF16F1C8AF1C30067CC57 /* main.m */; };
 		00FBF1731C8AF1C30067CC57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FBF1721C8AF1C30067CC57 /* AppDelegate.m */; };
@@ -72,6 +73,8 @@
 		00EAA38B1C91C19E00B547D3 /* CityGroupsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityGroupsModel.m; sourceTree = "<group>"; };
 		00EAA3901C91C2F600B547D3 /* SecondPopverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondPopverViewController.h; sourceTree = "<group>"; };
 		00EAA3911C91C2F600B547D3 /* SecondPopverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondPopverViewController.m; sourceTree = "<group>"; };
+		00ED73CB1CAEC23500F02390 /* DealModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealModel.h; sourceTree = "<group>"; };
+		00ED73CC1CAEC23500F02390 /* DealModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealModel.m; sourceTree = "<group>"; };
 		00FB369D1C9AF36200DDE637 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		00FB369E1C9AF36200DDE637 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		00FBF16B1C8AF1C30067CC57 /* my-meituan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-meituan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +130,8 @@
 		009852141C8F21C40080C09D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				00ED73CB1CAEC23500F02390 /* DealModel.h */,
+				00ED73CC1CAEC23500F02390 /* DealModel.m */,
 				0069B72F1C9C468B00E76DBF /* Cities.h */,
 				0069B7301C9C468B00E76DBF /* Cities.m */,
 				003127781C906FC1002CD312 /* CategoriyModel.h */,
@@ -312,6 +317,7 @@
 				00CE1D5A1CAC182E002E08BB /* ChangeCityViewController.m in Sources */,
 				0031277A1C906FC1002CD312 /* CategoriyModel.m in Sources */,
 				00CE1D5C1CAC182E002E08BB /* PopViewController.m in Sources */,
+				00ED73CD1CAEC23500F02390 /* DealModel.m in Sources */,
 				00FBF1701C8AF1C30067CC57 /* main.m in Sources */,
 				009852121C8F21A70080C09D /* MyNavController.m in Sources */,
 			);
