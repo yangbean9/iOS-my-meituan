@@ -18,6 +18,8 @@
 		0098521C1C8F21C40080C09D /* NavItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 009852171C8F21C40080C09D /* NavItem.m */; };
 		0098521D1C8F21C40080C09D /* NavItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009852181C8F21C40080C09D /* NavItem.xib */; };
 		00A2E5EC1C95AF720026A3A2 /* ChangeCityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A2E5EB1C95AF720026A3A2 /* ChangeCityViewController.xib */; };
+		00CAB2CD1CB008300083EF6A /* MainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CAB2CB1CB008300083EF6A /* MainCollectionViewCell.m */; };
+		00CAB2CE1CB008300083EF6A /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00CAB2CC1CB008300083EF6A /* MainCollectionViewCell.xib */; };
 		00CC80241C9460FD00D0EC18 /* SecondPopverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00CC80231C9460FD00D0EC18 /* SecondPopverViewController.xib */; };
 		00CE1D5A1CAC182E002E08BB /* ChangeCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CE1D571CAC182E002E08BB /* ChangeCityViewController.m */; };
 		00CE1D5B1CAC182E002E08BB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CE1D581CAC182E002E08BB /* FirstViewController.m */; };
@@ -55,6 +57,9 @@
 		009852181C8F21C40080C09D /* NavItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavItem.xib; sourceTree = "<group>"; };
 		00A2E5EB1C95AF720026A3A2 /* ChangeCityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeCityViewController.xib; sourceTree = "<group>"; };
 		00A2E5ED1C95AFD90026A3A2 /* ChangeCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeCityViewController.h; sourceTree = "<group>"; };
+		00CAB2CA1CB008300083EF6A /* MainCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCollectionViewCell.h; sourceTree = "<group>"; };
+		00CAB2CB1CB008300083EF6A /* MainCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCollectionViewCell.m; sourceTree = "<group>"; };
+		00CAB2CC1CB008300083EF6A /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
 		00CC80231C9460FD00D0EC18 /* SecondPopverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondPopverViewController.xib; sourceTree = "<group>"; };
 		00CE1D571CAC182E002E08BB /* ChangeCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeCityViewController.m; sourceTree = "<group>"; };
 		00CE1D581CAC182E002E08BB /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
@@ -145,6 +150,9 @@
 		009852151C8F21C40080C09D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				00CAB2CA1CB008300083EF6A /* MainCollectionViewCell.h */,
+				00CAB2CB1CB008300083EF6A /* MainCollectionViewCell.m */,
+				00CAB2CC1CB008300083EF6A /* MainCollectionViewCell.xib */,
 				00DCACC61CA18DEA00D4C814 /* popView.h */,
 				00DCACC71CA18DEA00D4C814 /* popView.m */,
 				0031277D1C907115002CD312 /* popView.xib */,
@@ -291,6 +299,7 @@
 				00FBF17B1C8AF1C30067CC57 /* Assets.xcassets in Resources */,
 				003127771C906EEF002CD312 /* sorts.plist in Resources */,
 				00CC80241C9460FD00D0EC18 /* SecondPopverViewController.xib in Resources */,
+				00CAB2CE1CB008300083EF6A /* MainCollectionViewCell.xib in Resources */,
 				00CE1D631CAC1997002E08BB /* Info.plist in Resources */,
 				00A2E5EC1C95AF720026A3A2 /* ChangeCityViewController.xib in Resources */,
 			);
@@ -314,6 +323,7 @@
 				00CE1D5B1CAC182E002E08BB /* FirstViewController.m in Sources */,
 				00EAA38C1C91C19E00B547D3 /* CityGroupsModel.m in Sources */,
 				0098521C1C8F21C40080C09D /* NavItem.m in Sources */,
+				00CAB2CD1CB008300083EF6A /* MainCollectionViewCell.m in Sources */,
 				00CE1D5A1CAC182E002E08BB /* ChangeCityViewController.m in Sources */,
 				0031277A1C906FC1002CD312 /* CategoriyModel.m in Sources */,
 				00CE1D5C1CAC182E002E08BB /* PopViewController.m in Sources */,

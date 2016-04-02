@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface dealModel : NSObject
+@interface DealModel : NSObject
 
 // 商品分类
 @property (nonatomic,copy)NSString *categories;

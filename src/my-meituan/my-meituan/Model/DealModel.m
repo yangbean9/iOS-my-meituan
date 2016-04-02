@@ -6,16 +6,16 @@
 //  Copyright © 2016年 robin young. All rights reserved.
 //
 
-#import "dealModel.h"
+#import "DealModel.h"
 
-@implementation dealModel
+@implementation DealModel
 
 
 - (NSArray *)asignModelWithDict:(NSDictionary *)dict{
     NSMutableArray *arr = [[NSMutableArray alloc]init];
     NSArray *dictArray = [dict objectForKey:@"deals"];
     for (NSDictionary *dict in dictArray) {
-        dealModel *md = [[dealModel alloc]init];
+        DealModel *md = [[DealModel alloc]init];
         md.categories = dict[@"categories"];
         md.city = dict[@"city"];
         md.current_price = dict[@"current_price"];
