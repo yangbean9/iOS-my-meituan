@@ -33,7 +33,7 @@
     // Initialization code
 }
 
-- (void)showUIWithModel:(DealModel *)model{
+- (void)showUIWithModel:(DealModel *)model {
     self.titleLabel.text = model.title;
     self.detailLabel.text = model.Description;
 }
