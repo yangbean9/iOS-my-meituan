@@ -24,13 +24,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *salesNumLabel;
 
 
-
 @end
 
 @implementation MainCollectionViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    
 }
 
 - (void)showUIWithModel:(DealModel *)model {
