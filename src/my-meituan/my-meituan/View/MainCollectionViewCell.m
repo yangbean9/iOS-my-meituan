@@ -8,6 +8,7 @@
 
 #import "MainCollectionViewCell.h"
 #import "DealModel.h"
+#import "UIImageView+WebCache.h"
 
 @interface MainCollectionViewCell ()
 
@@ -35,6 +36,9 @@
 - (void)showUIWithModel:(DealModel *)model {
     self.titleLabel.text = model.title;
     self.detailLabel.text = model.Description;
+    self.priceLabel.text = model.current_price;
+    self.oldPriceLabel.text = model.list_price;
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:model.image_url]];
 }
 
 @end
