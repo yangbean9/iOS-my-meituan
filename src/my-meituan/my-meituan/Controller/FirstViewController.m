@@ -5,7 +5,6 @@
 //  Created by robin young on 16/3/30.
 //  Copyright © 2016年 robin young. All rights reserved.
 //
-
 #import "FirstViewController.h"
 #import "NavItem.h"
 #import "PopViewController.h"
@@ -13,6 +12,8 @@
 #import "CityGroupsModel.h"
 #import "CategoriyModel.h"
 #import "DPAPI.h"
+#import "dealModel.h"
+#import "MainCollectionViewCell.h"
 
 @interface FirstViewController ()<DPRequestDelegate>{
     UIBarButtonItem *firstItem;
@@ -21,16 +22,18 @@
     
     NSString *_selectedCityName;
     NSString *_selectedCategory;
+    NSArray *_dataSource;
 }
 
 @end
 
 @implementation FirstViewController
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"MainCell";
 
 - (instancetype)init{
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
+    layout.itemSize = CGSizeMake(300, 300);
     return [self initWithCollectionViewLayout:layout];
 }
 
@@ -45,20 +48,20 @@ static NSString * const reuseIdentifier = @"Cell";
     
     
     // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"MainCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
     
     //添加观察者
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(categoryChange:) name:@"categoryDidChanged" object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(subCategoryChange:) name:@"subCategoryDidChanged" object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(cityChange:) name:@"cityDidChanged" object:nil];
-
+    
     
 }
 
 - (void)categoryChange:(NSNotification*)noti{
     CategoriyModel *md = (CategoriyModel*)noti.userInfo[@"categoryModel"];
     NSLog(@"左表：%@",md.name);
-        //发送网络请求
+    //发送网络请求
     [self createRequest];
 }
 
@@ -75,7 +78,7 @@ static NSString * const reuseIdentifier = @"Cell";
             _selectedCategory = selectedSubName;
         }
     }
-
+    
     //发送网络请求
     [self createRequest];
 }
@@ -97,7 +100,10 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (void)request:(DPRequest *)request didFinishLoadingWithResult:(id)result{
-    NSLog(@"%@",result);
+    NSDictionary *dict = result;
+    DealModel *md = [[DealModel alloc]init];
+    _dataSource = [md asignModelWithDict:dict];
+    [self.collectionView reloadData];
 }
 
 - (void)request:(DPRequest *)request didFailWithError:(NSError *)error{
@@ -117,12 +123,12 @@ static NSString * const reuseIdentifier = @"Cell";
     [second addtarget:self action:@selector(secondClick)];
     NavItem *third = [NavItem makeItem];
     [third addtarget:self action:@selector(thirdClick)];
-
+    
     firstItem= [[UIBarButtonItem alloc]initWithCustomView:first];
     
     
     secondItem = [[UIBarButtonItem alloc]initWithCustomView:second];
-
+    
     thirdItem = [[UIBarButtonItem alloc]initWithCustomView:third];
     self.navigationItem.leftBarButtonItems = @[logo,firstItem,secondItem,thirdItem];
 }
@@ -133,11 +139,11 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 - (void)secondClick{
     [self createSecondPopver];
-
+    
 }
 - (void)thirdClick{
     NSLog(@"1");
-
+    
 }
 
 #pragma mark - 第一个下拉菜单
@@ -165,53 +171,52 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete method implementation -- Return the number of sections
-    return 0;
+    return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete method implementation -- Return the number of items in the section
-    return 0;
+    return _dataSource.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    MainCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     // Configure the cell
-    
+    DealModel *md = _dataSource[indexPath.item];
+    [cell showUIWithModel:md];
     return cell;
 }
 
 #pragma mark <UICollectionViewDelegate>
 
 /*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
+ // Uncomment this method to specify if the specified item should be highlighted during tracking
+ - (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
 	return YES;
-}
-*/
+ }
+ */
 
 /*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
+ // Uncomment this method to specify if the specified item should be selected
+ - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+ return YES;
+ }
+ */
 
 /*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
+ // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
+ - (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
 	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+ }
+ 
+ - (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
 	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+ }
+ 
+ - (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
 	
-}
-*/
+ }
+ */
 
 @end
