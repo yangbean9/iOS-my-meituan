@@ -30,6 +30,7 @@
 		0031277A1C906FC1002CD312 /* CategoriyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 003127791C906FC1002CD312 /* CategoriyModel.m */; };
 		0031277F1C907115002CD312 /* popView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0031277D1C907115002CD312 /* popView.xib */; };
 		0069B7311C9C468B00E76DBF /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0069B7301C9C468B00E76DBF /* Cities.m */; };
+		0083978C1CB6A538007ED791 /* MyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0083978B1CB6A538007ED791 /* MyLabel.m */; };
 		009852121C8F21A70080C09D /* MyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0098520E1C8F21A70080C09D /* MyNavController.m */; };
 		0098521C1C8F21C40080C09D /* NavItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 009852171C8F21C40080C09D /* NavItem.m */; };
 		0098521D1C8F21C40080C09D /* NavItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009852181C8F21C40080C09D /* NavItem.xib */; };
@@ -97,6 +98,8 @@
 		0031277D1C907115002CD312 /* popView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popView.xib; sourceTree = "<group>"; };
 		0069B72F1C9C468B00E76DBF /* Cities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cities.h; sourceTree = "<group>"; };
 		0069B7301C9C468B00E76DBF /* Cities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cities.m; sourceTree = "<group>"; };
+		0083978A1CB6A538007ED791 /* MyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLabel.h; sourceTree = "<group>"; };
+		0083978B1CB6A538007ED791 /* MyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLabel.m; sourceTree = "<group>"; };
 		0098520B1C8F21A70080C09D /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		0098520D1C8F21A70080C09D /* MyNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavController.h; sourceTree = "<group>"; };
 		0098520E1C8F21A70080C09D /* MyNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavController.m; sourceTree = "<group>"; };
@@ -239,6 +242,8 @@
 		009852151C8F21C40080C09D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0083978A1CB6A538007ED791 /* MyLabel.h */,
+				0083978B1CB6A538007ED791 /* MyLabel.m */,
 				00CAB2CA1CB008300083EF6A /* MainCollectionViewCell.h */,
 				00CAB2CB1CB008300083EF6A /* MainCollectionViewCell.m */,
 				00CAB2CC1CB008300083EF6A /* MainCollectionViewCell.xib */,
@@ -432,6 +437,7 @@
 				001A78C81CB3F9C2005861DC /* UIButton+WebCache.m in Sources */,
 				00CE1D5C1CAC182E002E08BB /* PopViewController.m in Sources */,
 				001A78BF1CB3F9C2005861DC /* MKAnnotationView+WebCache.m in Sources */,
+				0083978C1CB6A538007ED791 /* MyLabel.m in Sources */,
 				001A78C51CB3F9C2005861DC /* SDWebImageDownloaderOperation.m in Sources */,
 				00ED73CD1CAEC23500F02390 /* DealModel.m in Sources */,
 				00FBF1701C8AF1C30067CC57 /* main.m in Sources */,
